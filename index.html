@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Slide In/Out</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ex.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo1"><img src="logo.png" width="35px"></div>
+    <div class="nav-text">abou talib.com</div>
+    <button class="menu-btn" id="menu-btn">☰</button>
+  </nav>
+  <div class="menu" id="menu">
+    <a href="#">الانشطة المدرسية</a><hr>
+    <a href="#">الثقافة و الفنون</a><hr>
+    <a href="#">تحدي القرائة العربي</a><hr>
+  </div>
+  <br><br>
+  <div class="container">
+    <div class="abbpub">
+      <img src="lobo1.png" width="35px" class="img1">
+    <span>username</span>
+    </div>
+    <div class="pub">
+      <p>ppppppppppppppppppppppppppppp</p>
+      <img src="R.jpg" width="95%">
+    </div>
+  </div>
+  <div class="container1">
+    <div class="abbpub">
+      <img src="lobo1.png" width="35px" class="img1">
+    <span>username</span>
+    </div>
+    <div class="pub">
+      <p>ppppppppppppppppppppppppppppp</p>
+      <img src="R.jpg" width="95%">
+    </div>
+  </div>
+  <div class="container1">
+    <div class="abbpub">
+      <img src="lobo1.png" width="35px" class="img1">
+    <span>username</span>
+    </div>
+    <div class="pub">
+      <p>ppkkkkkkkkkkkpppppp</p>
+      <img src="R.jpg" width="95%">
+    </div>
+  </div>
+  <script>
+    // script.js
+const menuBtn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu');
+
+menuBtn.addEventListener('click', () => {
+  menu.classList.toggle('active'); // إضافة أو إزالة الكلاس "active"
+});
+  </script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,78 @@
+/* styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+  height: 34px;
+  box-shadow: 01px 3px 15px rgb(53, 52, 52);
+}
+
+.logo1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-text {
+  margin-left: 20px;
+  font-size:20px;
+  position: absolute;
+  left: 37px;
+}
+
+.menu-btn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: fixed;
+  left: 87%;
+}
+
+/* القائمة */
+.menu {
+  position: fixed;
+  top: 54px;
+  right: -250px; /* خارج الشاشة */
+  height: 100%;
+  width: 370px;
+  background: #484646;
+  color: white;
+  box-shadow: -2px 0 5px rgba(119, 195, 194, 0);
+  padding: 20px;
+  font-size: 20px;
+  transition: transform 0.3s ease;
+  transform: translateX(100%); /* مخفية افتراضياً */
+}
+
+/* الروابط داخل القائمة */
+.menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  background-color: rgb(58, 196, 196);
+  padding: 7px;
+  border-radius: 12px;
+}
+
+.menu a:hover {
+  background: #18cb8f;
+  padding-left: 10px;
+}
+
+/* عند عرض القائمة */
+.menu.active {
+  transform: translateX(0); /* تظهر بالكامل */
+}
